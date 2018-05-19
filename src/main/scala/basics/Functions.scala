@@ -4,7 +4,7 @@ object Functions {
 
   def main(args: Array[String]): Unit = {
 
-    //anonymous functions
+    //anonymous functions or higher oder functions
 
 
     val a = (x: Int, y: Int) => x + y

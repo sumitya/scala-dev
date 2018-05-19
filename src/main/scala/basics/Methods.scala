@@ -13,6 +13,8 @@ object Methods {
     fx(a).toString
   }
 
+  def justname:String = "It Just Print the name"
+
   def main(args: Array[String]): Unit = {
 
     calculation(3,3)
@@ -27,5 +29,7 @@ object Methods {
     println(result)
 
     println(sameresult)
+
+    println(justname)
   }
 }
