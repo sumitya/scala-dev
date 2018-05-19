@@ -19,12 +19,12 @@ abstract class FlyingAnimals extends  birds{
 
 }
 
-class Dot extends  Animal{
+class Dog extends  Animal{
 
   var color = "Brown"
 
   override def speak() = {
-    println("Bhewww...")
+    println("Bhaww Bhaww...")
   }
 }
 
