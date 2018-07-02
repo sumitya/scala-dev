@@ -10,6 +10,11 @@ class Classes {
   def main(args: Array[String]): Unit = {
     val obj = new Classes()
     obj.printer("Printer")
+    val arr = Array(1,2,3,4,5)
+
+    arr.slice(1,2)
+
+
   }
 
   /* If this class is decompiled then static void main
