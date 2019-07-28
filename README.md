@@ -1,2 +1,2 @@
 # scala-dev
-This repository aims at learning basic and best practices of scala Language
+This repository has examples of Scala Programming Language.
