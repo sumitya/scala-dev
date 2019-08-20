@@ -226,3 +226,24 @@ private	    |Y	  |Y	      |N	     |N       |	N
 *: Top-level protected and private members are accessible from inside the package.
 *
 */
+
+// 17. Def and val in inheritance
+
+// def in base abstract class/traits should be used
+//to declare the abstract members in the class.
+// coz they can be used to override in sub classes by
+// def/val/var keywords
+
+trait Shape{
+  def edges:Int
+
+  // val nodes:Int //this should not be declared val
+
+  }
+
+class Square extends Shape{
+  val edges = 10
+
+  //def nodes = 10  -> This can't override nodes. Since nodes is immutable
+
+}
