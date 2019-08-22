@@ -247,3 +247,46 @@ class Square extends Shape{
   //def nodes = 10  -> This can't override nodes. Since nodes is immutable
 
 }
+
+// 18. LeftFold and RightFold in Scala
+
+/*
+
+def foldLeft[B](z: B)(op: (B, A) ⇒ B): B
+def foldRight[B](z: B)(f: (A, B) => B): B
+*/
+
+
+/* 1.
+In case of FoldLeft x will be the result of the function starting from the arugment to the function. ,
+and y will be the elements of the list from left to right.
+(10)(10,2) => 10-2 => 8
+(10)(8,3) => 8-3 => 5
+(10)(5,9) => 5-9 => -4
+
+*/
+
+List(2,3,9).foldLeft(10)((x,y) => x - y)
+
+
+/*
+2.
+In case of foldRight, y will be the result of the function starting from the arugment to the function. ,
+and x will be the elements of the list from left to right
+(10)(9,10) => 9-10 => -1
+(1)(3,-1) => 3-(-1) => 4
+(1)(2,4) => 2-4 => -2
+*/
+
+
+List(2,3,9).foldRight(10)((x,y) => x - y)
+
+/*
+3.
+//by default it starts from left element to right.
+(10)(10,2) => 10-2 => 8
+(10)(8,3) => 8-3 => 5
+(10)(5,9) => 5-9 => -4
+*/
+
+List(2,3,9).fold(10)((x,y) => x - y)
