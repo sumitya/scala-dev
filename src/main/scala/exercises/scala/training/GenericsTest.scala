@@ -1,4 +1,4 @@
-package training
+package tests.scala.training
 
 trait Species{
   def hasLife():Unit = println("All Species has Life!!!")

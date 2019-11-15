@@ -1,4 +1,4 @@
-package sotests
+package tests.scala.basics.sotests
 
 object MapTests {
 

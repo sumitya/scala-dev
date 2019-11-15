@@ -187,12 +187,8 @@ object TestCompanion{
 }
 
 //12. imports
-import scala.collection._
-import scala.collection.immutable.AbstractMap
 
 // 13. package objects
-
-import training.TESTCONSTANT
 
 println(TESTCONSTANT)
 

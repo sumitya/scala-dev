@@ -1,6 +1,6 @@
 package basics
 
-import io.StdIn._
+import scala.io.StdIn._
 
 object OperationOnData {
 

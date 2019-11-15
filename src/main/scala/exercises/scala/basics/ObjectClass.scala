@@ -1,5 +1,7 @@
 package basics
 
+import tests.scala.basics.CaseClasses
+
 object ObjectClass {
 
   def main(args: Array[String]): Unit = {
