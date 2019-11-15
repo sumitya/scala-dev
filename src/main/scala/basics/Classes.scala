@@ -1,18 +1,34 @@
 package basics
 
-class Classes {
+object Classes {
 
-  def printer(name: String): String = {
+  def printer(name: String): Unit = {
 
-    "This is basic class method with Name" + name
+    println("This is basic class method with Name" + name)
   }
 
   def main(args: Array[String]): Unit = {
-    val obj = new Classes()
-    obj.printer("Printer")
-    val arr = Array(1,2,3,4,5)
 
-    arr.slice(1,2)
+    class Builder(val i: Int){
+
+      def Foo() {
+        println("Value is initialized: " + i)
+      }
+    }
+
+   printer("Printer")
+    val lst = List(1,2,3,4,5)
+
+    val out = lst.map( a => new Builder(a).Foo())
+
+    val out1 = lst.map( a => Classes.printer(a.toString))
+
+    print(out)
+    print(out1)
+
+
+    //val finalBuilder = lst.foldLeft(new Builder(0).Foo())
+
 
 
   }

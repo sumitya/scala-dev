@@ -6,7 +6,11 @@ import scala.util.{Failure, Success, Try}
 //https://docs.scala-lang.org/tour/unified-types.html
 
 /*val nothing: Nothing   -> No representation,
-Explanations about Nothing
+Explanations about Nothing.
+A common use is to signal non-termination such as
+a thrown exception, program exit,
+or an infinite loop (i.e., it is the
+type of an expression which does not evaluate to a value
 
 http://www.nickknowlson.com/blog/2013/03/31/representing-empty-in-scala/
 

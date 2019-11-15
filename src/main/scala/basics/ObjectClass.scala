@@ -5,8 +5,8 @@ object ObjectClass {
   def main(args: Array[String]): Unit = {
 
     //basics.Classes call
-    val obj = new Classes()
-    println(obj.printer("Printer"))
+   /* val obj = new Classes()
+    println(obj.printer("Printer"))*/
 
     //basics.CaseClasses call
     val caseobj = CaseClasses(1,2)
