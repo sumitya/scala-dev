@@ -7,7 +7,6 @@ import scala.io.{BufferedSource, Source}
 
 object FileExceptions {
 
-
   def main(args: Array[String]): Unit = {
 
     var web :BufferedSource = null

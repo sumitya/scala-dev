@@ -28,4 +28,17 @@ object Lists {
       }
 
     }
+
+  def transformList()= {
+
+    //List(1,2,3,4,5).map( element => element * 2).filter( element => element % 2 !=0).isEmpty
+
+    List(1,2,3).flatMap{
+      element => List(1 + element %2==0, 1 + element %2==0,3 + element %2==0)
+
+    }
+
+
+
+  }
   }
